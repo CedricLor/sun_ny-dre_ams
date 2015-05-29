@@ -1,0 +1,21 @@
+- name: Louis Vuitton
+  image: louis_vuitton.jpeg
+  url: http://www.lvmh.com
+  ranking: 5
+- name: Dior
+  image: dior.jpeg
+  url: http://www.dior.com
+  ranking: 4.5
+- name: L'Oréal
+  image: loreal.jpeg
+  url: http://www.loreal.com
+  ranking: 4
+- name: Gucci
+  image: gucci.jpeg
+  url: http://www.gucci.com
+  ranking: 3.4
+- name: Chanel
+  image: chanel.jpeg
+  url: http://www.channel.com
+  ranking: 1.5
+
