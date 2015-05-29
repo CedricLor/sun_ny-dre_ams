@@ -4,7 +4,7 @@
 $navbar-color: black;
 $navbar-hover-color: $yellow;
 $navbar-font-family: $header-font;
-$navbar-bg: white;
+$navbar-bg: $my-light-green;
 
 /* -------------------------------------
  * Box model
@@ -34,6 +34,10 @@ $navbar-profile-border-width: 2px;
 /* -------------------------------------
  * SCSS code
  * ------------------------------------- */
+ @keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
 .navbar-wagon {
   background: $navbar-bg;
   font-family: $navbar-font-family;
@@ -43,7 +47,16 @@ $navbar-profile-border-width: 2px;
   padding-right: $navbar-horizontal-padding;
   border-bottom: $navbar-border-bottom-width solid $navbar-border-bottom-color;
   min-height: 0;
-  transition: background 0.4s ease;
+  -webkit-transition: background 0.4s ease, opacity 0.4s ease;
+     -moz-transition: background 0.4s ease, opacity 0.4s ease;
+      -ms-transition: background 0.4s ease, opacity 0.4s ease;
+          transition: background 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 10s;
+  &:hover {
+    opacity: 1;
+  }
 
   .navbar-nav > li > a,
   .navbar-nav > .open > a,

@@ -31,3 +31,17 @@
   background: $purple;
   color: white;
 }
+
+/* My utilities */
+.padded {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.super-margin {
+  margin-top: 220px;
+}
+/* My backgrounds */
+.bg-light-green {
+  background-color: $my-light-green;
+  color: $my-light-grey;
+}

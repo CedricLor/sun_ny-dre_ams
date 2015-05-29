@@ -1,0 +1,57 @@
+body {
+  font-family: 'Open Sans', sans-serif; /* base-font */
+  font-size: $my-base-size;
+  position: relative;
+  color: $my-light-grey;
+  transition: opacity 0.5s ease;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif; /* header-font */
+}
+h2 {
+  font-size: 20px; /* my-h2-size */
+}
+
+/* CARD FORMATING */
+.card {
+  padding: 25px 5px;
+}
+/* Card hover */
+.nav-icon {
+  opacity: 0.2;
+-webkit-transition: opacity 0.3s ease;
+   -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+        transition: opacity 0.5s ease;
+}
+#main-links .card:hover .nav-icon  {
+  opacity: 0.7;
+}
+#main-links .card:hover * {
+  color: $my-strong-grey;
+}
+/* HEADER */
+.header {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left:0;
+  background-image: url(../images/young_woman_back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  * {
+    color: white;
+  }
+  p {
+    font-family: Open Sans;
+    font-weight: 100;
+    font-size: 20px;
+  }
+}
+/* SECOND SECTION */
+#main-links {
+  margin-top: 500px;
+}

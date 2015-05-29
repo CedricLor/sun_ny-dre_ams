@@ -19,6 +19,9 @@ $header-font: "Montserrat", "sans-serif";
 // Font-size and line-height
 $base-size: 16px;
 $base-height: 1.4;
+// My font sizes
+$my-base-size: 14px;
+$my-h2-size: 20px;
 
 /* -------------------------------------
  * Colors
@@ -37,3 +40,10 @@ $gray-dark:    lighten(#000, 20%);   // #333
 $gray:         lighten(#000, 33.5%); // #555
 $gray-light:   lighten(#000, 46.7%); // #777
 $gray-lighter: lighten(#000, 93.5%); // #eee
+
+// My colors
+$my-red-slightly-transparent: rgba(245, 55, 55, 0.83);
+$my-red-fully-transparent: rgba(122, 53, 53, 0);
+$my-light-green: rgba(246, 248, 224, 0.7); /* used for background only */
+$my-light-grey: #9E9A9A; /* used for fonts in cards */
+$my-strong-grey: #4A4747; /* used for fonts in cards on hover */
