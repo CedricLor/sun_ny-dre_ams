@@ -1,10 +1,147 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Sun.ny Lo.ve
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="header">
+  <div class="container">
+    <div class="row super-margin">
+      <div class="col-xs-12 col-md-6">
+        <h1>Sun.ny Dre.ams</h1>
+        <p>Sunshine your head, dream up your life</p>
+        <p>Go out, shout out!</p>
+        <p> Laugh and love...</p>
+        <button class="btn btn-default btn-lg btn-formating" type="submit">Get a new life NOW!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main content -->
+<div id="main-links" class="content bg-light-green padded text-center">
+  <div class="container">
+    <!-- Features -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <%= image_tag 'hammer_noun_15224.svg', :class => "nav-icon" %>
+          <h2>Break balls</h2>
+          <p>Hot spring offer! Tons of balls straigth from the hospital, just for your pleasure! Register now!!!</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <%= image_tag 'axe_noun_149649_cc.svg', :class => "nav-icon" %>
+          <h2>Head huntings</h2>
+          <p>From September to December, heads are out of breed! Shoot one, get one for free.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <%= image_tag 'syringe_noun_64613_cc.svg', :class => "nav-icon" %>
+          <h2>Kill!!!</h2>
+          <p>Feel free to kill who you need to kill as naturally as you want! But please do it properly.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card">
+          <%= image_tag 'moon_noun_149884_cc.svg', :class => "nav-icon" %>
+          <h2>Hot moon talks</h2>
+          <p>Talk to the moon and receive vouchers for the sun.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="newsletter-register" class="bg-light-green padded text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="card text-center">
+          <h2 >Receive all the news from Sun.ny Dre.ams</h2>
+          <% form_tag '/', :class => 'form-inline', :method => 'put' do %>
+          <!-- <form class="form-inline" action="/"> -->
+            <div class="form-group">
+              <%= label_tag :email, :value => 'Email for newsletter', :for => 'email-for-newsletter', :class => 'sr-only' %>
+              <%= input_tag :email, :id => "email-for-newsletter" , :class => "form-control", :name => "email-for-newsletter", :placeholder => "jane.doe@gmail.com" %>
+            </div>
+            <div class="form-group">
+              <%= label_tag :email, :value => 'Submit to register to the newsletter', :for => 'submit-to-newsletter', :class => 'sr-only' %>
+              <%= input_tag :submit, :id => "submit-to-newsletter" , :class => "btn btn-default", :name => "submit-to-newsletter", :value => "Register" %>
+            </div>
+          <!-- </form> -->
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Map -->
+<div id="map" class="padded text-center" style="width: 100%; height: 400px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="card">
+          <div id="map" style="width: 100%; height: 400px;"></div>
+          <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+          <script type="text/javascript">
+          var myLatlng = new google.maps.LatLng(65.704497, 18.064995);
+          var myOptions = {
+            zoom: 8,
+            center: myLatlng,
+            scrollwheel: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{"featureType":"road","stylers":[{"visibility":"off"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"color":"#004b76"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"rgba(247, 248, 234, 0.4)"}]},{"featureType":"administrative.country","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#7f7d7a"},{"lightness":10},{"weight":1}]}]
+          };
+          var map = new google.maps.Map(document.getElementById('map'), myOptions);
+          var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: "You are here!"
+          });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div id="footer" class="bg-light-green">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <ul class="list-inline">
+          <li>
+            <% link_to '/' do %>
+              <i class="fa fa-youtube"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to '/' do %>
+              <i class="fa fa-instagram"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to '/' do %>
+              <i class="fa fa-facebook"></i>
+            <% end %>
+          </li>
+          <li>
+            <% link_to '/' do %>
+              <i class="fa fa-twitter"></i>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-8 text-right">
+        <p>Sun.ny Dre.ams is a real-life proposal by The Choice!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+<%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' %>
+<%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' %>
