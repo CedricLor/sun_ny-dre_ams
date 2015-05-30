@@ -1,34 +1,40 @@
 body {
-  font-family: 'Open Sans', sans-serif; /* base-font */
+  font-family: $base-font;
   font-size: $my-base-size;
   position: relative;
   color: $my-light-grey;
-  transition: opacity 0.5s ease;
+  background-color: rgba(255, 255, 255, 0); /* TO BE DISCUSSED WITH TEDDY */
 }
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif; /* header-font */
+  font-family: $header-font;
 }
 h2 {
   font-size: 20px; /* my-h2-size */
 }
+h3 {
+  font-size: 16px;
+}
 
-/* CARD FORMATING */
-.card {
-  padding: 25px 5px;
-}
+/* INDEX PAGE CARD FORMATING */
 /* Card hover */
-.nav-icon {
-  opacity: 0.2;
--webkit-transition: opacity 0.3s ease;
-   -moz-transition: opacity 0.3s ease;
-    -ms-transition: opacity 0.3s ease;
-        transition: opacity 0.5s ease;
+#main {
+  background-color: rgba(255, 255, 255, 0);
 }
-#main-links .card:hover .nav-icon  {
-  opacity: 0.7;
-}
-#main-links .card:hover * {
-  color: $my-strong-grey;
+#main-links .card {
+  padding: 25px 5px;
+  .nav-icon {
+    opacity: 0.2;
+    -webkit-transition: opacity 0.3s ease;
+       -moz-transition: opacity 0.3s ease;
+        -ms-transition: opacity 0.3s ease;
+            transition: opacity 0.5s ease;
+  }
+  &:hover .nav-icon {
+    opacity: 0.7;
+  }
+  &:hover * {
+    color: $my-strong-grey;
+  }
 }
 /* HEADER */
 .header {
@@ -36,7 +42,6 @@ h2 {
   height: 700px;
   top: 0;
   left:0;
-  background-image: url(../images/young_woman_back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,5 +54,33 @@ h2 {
     font-weight: 100;
     font-size: 20px;
   }
+  form * {
+    color: black;
+  }
+  &.index-bg-image {
+    background-image: url(../images/young_woman_back.jpg);
+  }
+  &.rankings-bg-image {
+    background-image: url(../images/mount-everest.jpg);
+  }
+  &.voicings-bg-image {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/fist.jpg);
+  }
 }
-
+/* RANKING PAGE */
+#companies-list {
+  .company-icon {
+    width: 70px;
+  }
+  h3 {
+    margin-top: 0px;
+  }
+  .separation-line {
+    padding-top: 10px;
+    border-bottom: 1px dotted black;
+  }
+  button {
+    margin-bottom: 10px;
+    width: 150px;
+  }
+}

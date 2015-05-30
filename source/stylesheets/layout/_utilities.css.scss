@@ -40,8 +40,17 @@
 .super-margin {
   margin-top: 220px;
 }
+.small-top-margin {
+  margin-top: 40px;
+}
+.search-form-margin {
+  margin-top: 100px;
+}
 /* My backgrounds */
 .bg-light-green {
   background-color: $my-light-green;
   color: $my-light-grey;
+  a {
+    color: $my-light-grey;
+  }
 }

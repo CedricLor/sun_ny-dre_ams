@@ -1,8 +1,8 @@
 ---
-title: Sun.ny Lo.ve
+title: Sun.ny Wel.come
 ---
 
-<div class="header">
+<div class="header index-bg-image"> <!-- TBD with Teddy -->
   <div class="container">
     <div class="row super-margin">
       <div class="col-xs-12 col-md-6">
@@ -22,34 +22,20 @@ title: Sun.ny Lo.ve
     <div class="container">
       <!-- Features -->
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="card">
-            <%= image_tag 'hammer_noun_15224.svg', :class => "nav-icon" %>
-            <h2>Break balls</h2>
-            <p>Hot spring offer! Tons of balls straigth from the hospital, just for your pleasure! Register now!!!</p>
+        <% data.index_items.each do |index_item| %>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="card">
+              <% link_to index_item.url do %>
+                <%= image_tag index_item.image, :class => "nav-icon" %>
+                <h2><%= index_item.name %></h2>
+                <p><%= index_item.description_1 %></p>
+                <% unless index_item.description_2.nil? %>
+                  <%= index_item.description_2 %>
+                <% end %>
+              <% end %>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="card">
-            <%= image_tag 'axe_noun_149649_cc.svg', :class => "nav-icon" %>
-            <h2>Head huntings</h2>
-            <p>From September to December, heads are out of breed! Shoot one, get one for free.</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="card">
-            <%= image_tag 'syringe_noun_64613_cc.svg', :class => "nav-icon" %>
-            <h2>Kill!!!</h2>
-            <p>Feel free to kill who you need to kill as naturally as you want! But please do it properly.</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="card">
-            <%= image_tag 'moon_noun_149884_cc.svg', :class => "nav-icon" %>
-            <h2>Hot moon talks</h2>
-            <p>Talk to the moon and receive vouchers for the sun.</p>
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>
@@ -109,40 +95,7 @@ title: Sun.ny Lo.ve
   </div>
 </div>
 
-<!-- Footer -->
-<div id="footer" class="bg-light-green">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4">
-        <ul class="list-inline">
-          <li>
-            <% link_to '/' do %>
-              <i class="fa fa-youtube"></i>
-            <% end %>
-          </li>
-          <li>
-            <% link_to '/' do %>
-              <i class="fa fa-instagram"></i>
-            <% end %>
-          </li>
-          <li>
-            <% link_to '/' do %>
-              <i class="fa fa-facebook"></i>
-            <% end %>
-          </li>
-          <li>
-            <% link_to '/' do %>
-              <i class="fa fa-twitter"></i>
-            <% end %>
-          </li>
-        </ul>
-      </div>
-      <div class="col-xs-8 text-right">
-        <p>Sun.ny Dre.ams is a real-life proposal by The Choice!</p>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
 <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' %>

@@ -1,0 +1,62 @@
+---
+title: Sun.ny Ran.kings
+---
+
+<div class="header rankings-bg-image">
+  <div class="container">
+    <div class="row small-top-margin">
+      <div class="col-xs-12 col-md-6">
+        <h1>Sun.ny Ran.kings</h1>
+        <p>Up to the top!</p>
+        <p>Equal opportunity. Diversity!</p>
+        <p>Most respectful and respected firms.</p>
+        <button class="btn btn-default btn-lg btn-formating" type="submit">Rate your Company! Now!</button>
+      </div>
+    </div>
+    <div class="row search-form-margin">
+      <div class="col-xs-12 col-md-3"></div>
+      <div class="col-xs-12 col-md-6 text-center">
+        <form>
+          <div class="form-group">
+            <label class="sr-only" for="searchedCompanyName">Please enter the name of the company you are looking for</label>
+            <input type="text" class="form-control" id="searchedCompanyName" placeholder="Enter the name of the firm you are looking for">
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-12 col-md-3"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Main content -->
+<div id="main">
+  <div id="companies-list" class="content bg-light-green padded text-center">
+    <div class="container">
+      <% data.companies.cosmetics.each do |firm| %>
+      <div class="row separation-line">
+        <div class="col-xs-12 col-sm-3">
+          <div class="card">
+            <%= image_tag firm.image, :class => "company-icon" %>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-7">
+          <div class="card text-left">
+            <h3><%= "#{firm.ranking}\/5 - " %><%= link_to firm.name, firm.url %></h3>
+            <p><%= "#{firm.name} #{firm.description}" %></p>
+            <p>Total headcount: <%= firm.number_of_employees %></p>
+            <p>Total number of reviews: <%= firm.voters %></p>
+            <p><%= link_to "Read more...", firm.internal_url %></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <div class="card text-left">
+              <button type="button" class="btn btn-default btn-xs">Rate this firm!</button>
+              <button type="button" class="btn btn-default btn-xs">Share on <i class="fa fa-facebook"></i></button>
+              <button type="button" class="btn btn-default btn-xs">Tweet it! <i class="fa fa-twitter"></i></button>
+            </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div> <!-- companies-list -->
+</div> <!-- #main -->

@@ -1,0 +1,20 @@
+- name: Sun.ny Ran.kings
+  image: hammer_noun_15224.svg
+  url: /rankings.html
+  description_1: Top performing gender diversity companies by industry.
+  description_2:
+- name: Sun.ny Voicing
+  image: axe_noun_149649_cc.svg
+  url: /voicings.html
+  description_1: Voice it out, express yourself! Tell us what's going on. Reward the best! Follow-up on your situation!
+  description_2:
+- name: Sun.ny Ser.vices
+  image: syringe_noun_64613_cc.svg
+  url: /services.html
+  description_1: Get in touch with professionals. Receive advice. Pay with earned vouchers.
+  description_2:
+- name: Sun.ny Share
+  image: moon_noun_149884_cc.svg
+  url: /discuss.html
+  description_1: Anonymous meeting room. Share your experience. Help others.
+  description_2: Or listen to others. Get experience. Learn. And react.

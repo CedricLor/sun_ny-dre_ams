@@ -1,21 +1,57 @@
-- name: Louis Vuitton
-  image: louis_vuitton.jpeg
-  url: http://www.lvmh.com
-  ranking: 5
+cosmetics:
 - name: Dior
-  image: dior.jpeg
+  image: dior.svg
   url: http://www.dior.com
+  internal_url: dior
   ranking: 4.5
-- name: L'Oréal
-  image: loreal.jpeg
-  url: http://www.loreal.com
-  ranking: 4
+  voters: 450
+  description: is a French luxury goods industry company based in Paris.
+  number_of_employees: 117800
 - name: Gucci
-  image: gucci.jpeg
+  image: gucci.png
   url: http://www.gucci.com
-  ranking: 3.4
+  internal_url: gucci
+  ranking: 4.2
+  voters: 148
+  description: is an Italian luxury goods industry company based in Milano.
+  number_of_employees: 9000
 - name: Chanel
-  image: chanel.jpeg
-  url: http://www.channel.com
-  ranking: 1.5
-
+  image: chanel.svg
+  url: http://www.chanel.com
+  internal_url: chanel
+  ranking: 3.9
+  voters: 128
+  description: is a French luxury goods industry company based in Paris.
+  number_of_employees: 1270
+- name: Louis Vuitton
+  image: louis_vuitton.svg
+  url: http://www.lvmh.com
+  internal_url: lvmh
+  ranking: 3.6
+  voters: 240
+  description: is a French luxury goods industry company based in Paris.
+  number_of_employees: 114635
+- name: Beiersdorf
+  image: beiersdorf.svg
+  url: http://www.beiersdorf.com
+  internal_url: beiersdorf
+  ranking: 2.5
+  voters: 340
+  description: is a German cosmetic goods industry company based in Hamburg.
+  number_of_employees: 19128
+- name: L'Oréal
+  image: loreal.svg
+  url: http://www.loreal.com
+  internal_url: loreal
+  ranking: 2
+  voters: 280
+  description: is an French cosmetic goods industry company based in Paris.
+  number_of_employees: 78600
+- name: Sephora
+  image: sephora.gif
+  url: http://www.sephora.com
+  internal_ur: sephora
+  ranking: 0.9
+  voters: 322
+  description: is a French retail cosmetic distribution company based in Paris.
+  number_of_employees: unknown

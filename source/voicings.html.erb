@@ -1,0 +1,129 @@
+---
+title: Sun.ny Voicings
+---
+
+<div class="header voicings-bg-image">
+  <div class="container">
+    <div class="row small-top-margin">
+      <div class="col-xs-12 col-sm-4"></div>
+      <div class="col-xs-12 col-sm-4">
+        <h1>Sun.ny Voicings</h1>
+        <p>Express yourself!</p>
+        <p>This will always stay a SECRET.</p>
+        <p>Your voice matters: it counts to rank the firms!!!</p>
+      </div>
+      <div class="col-xs-12 col-sm-4"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Hide the radio buttons */
+  .radio-selector {
+    display: none;
+  }
+  /* Hide all the questionnaires by default */
+  .questionnaire-content {
+    display: none;
+  }
+  /* Show the questionnaire corresponding to the check radio button */
+  input.radio-selector:checked + div.questionnaire-content {
+    display:block;
+  }
+  input.radio-selector:checked + div.questionnaire-content + label.label-selector {
+    color:red;
+  }
+  .card {
+    cursor: pointer;
+  }
+</style>
+
+<!-- Main content -->
+<div id="main">
+  <div id="questionnaire-wrapper" class="content bg-light-green padded text-center">
+    <div class="container">
+
+      <div id="iconHeaderRow" class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <input id="sexism-selector" class="radio-selector" type="radio" name="display-selector">
+          <div id="sexismQuestionnaire" class="questionnaire-content">
+            <h2>Sexism Questionnaire</h2>
+          </div>
+          <label id="sexism-label" class="label-selector" for="sexism-selector">
+            <div class="card">
+              <img src="#" class="">
+              <h2>Sexism</h2>
+            </div>
+          </label>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <input id="discri-rem-selector" class="radio-selector" type="radio" name="display-selector">
+          <div id="remDiscriQuestionnaire" class="questionnaire-content">
+            <h2>Remuneration Discrimination Questionnaire</h2>
+          </div>
+          <label id="discri-rem-label" class="label-selector" for="discri-rem-selector">
+            <div class="card">
+              <img src="#" class="">
+              <h2>Remuneration Discrimination</h2>
+            </div>
+          </label>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <input id="discri-prom-selector" class="radio-selector" type="radio" name="display-selector">
+          <div id="promDiscriQuestionnaire" class="questionnaire-content">
+            <h2>Promotion Discrimination Questionnaire</h2>
+          </div>
+          <label id="discri-prom-label" class="label-selector" for="discri-prom-selector">
+            <div class="card">
+              <img src="#" class="">
+              <h2>Promotion Discrimination</h2>
+            </div>
+          </label>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <input id="harassment-selector" class="radio-selector" type="radio" name="display-selector">
+          <div class="questionnaire-content">
+            <h2>Harassment Questionnaire</h2>
+          </div>
+          <label id="harassment-label" class="label-selector" for="harassment-selector">
+            <div class="card">
+              <img src="#" class="">
+              <h2>Harassment / Bullying</h2>
+            </div>
+          </label>
+        </div>
+
+      </div> <!-- row #1 -->
+
+<!--       <div id="contentRow" class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+          <div class="card">
+            <input id="sexism-selector" class="radio-selector" type="radio" name="display-selector">
+            <div id="sexismQuestionnaire" class="questionnaire-content">
+              <h2>Sexism Questionnaire</h2>
+            </div>
+            <input id="discri-rem-selector" class="radio-selector" type="radio" name="display-selector">
+            <div id="remDiscriQuestionnaire" class="questionnaire-content">
+              <h2>Remuneration Discrimination Questionnaire</h2>
+            </div>
+            <input id="discri-prom-selector" class="radio-selector" type="radio" name="display-selector">
+            <div id="promDiscriQuestionnaire" class="questionnaire-content">
+              <h2>Promotion Discrimination Questionnaire</h2>
+            </div>
+            <input id="harassment-selector" class="radio-selector" type="radio" name="display-selector">
+            <div class="questionnaire-content">
+              <h2>Harassment Questionnaire</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3"></div>
+      </div>
+ -->
+    </div> <!-- container -->
+  </div> <!-- wrapper -->
+</div> <!-- main -->
