@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Sun.ny Voicings</title>
+
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="javascripts/all.js" type="text/javascript"></script>
+
+  </head>
+
+  <body class="">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-wagon" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<a class="navbar-brand" href="./">            <img src="images/logo.svg" />
+</a>        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+<a href="/pricing.html">                <i class="fa fa-dollar"></i> Pricing
+</a>            </li>
+            <li>
+<a href="/contact.html">                <i class="fa fa-envelope-o"></i> Contact
+</a>            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Follow-us <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+<a href="https://www.facebook.com/lewagonformation">                    <i class="fa fa-facebook-square"></i> Facebook
+</a>                </li>
+<a href="https://twitter.com/lewagonparis">                    <i class="fa fa-twitter-square"></i> Facebook
+</a>              </ul>
+            </li>
+            <li>
+              <a class="btn" data_target="#subscribe-modal" data_toggle="modal" href="#">Order now</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="header voicings-bg-image">
+  <div class="container">
+    <div class="row small-top-margin">
+      <div class="col-xs-12 col-sm-4"></div>
+      <div class="col-xs-12 col-sm-4">
+        <h1>Sun.ny Voicings</h1>
+        <p>Express yourself!</p>
+        <p>This will always stay a SECRET.</p>
+        <p>Your voice matters: it counts to rank the firms!!!</p>
+      </div>
+      <div class="col-xs-12 col-sm-4"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Hide the radio buttons */
+  .radio-selector {
+    display: none;
+  }
+  /* Hide all the questionnaires by default */
+  .questionnaire-content {
+    display: none;
+  }
+  /* Show the questionnaire corresponding to the check radio button */
+  input.radio-selector:checked + div.questionnaire-content {
+    display:block;
+  }
+  input.radio-selector:checked + div.questionnaire-content + label.label-selector {
+    color:red;
+  }
+  .card {
+    cursor: pointer;
+  }
+</style>
+
+<!-- Main content -->
+<div id="main">
+  <div id="questionnaire-wrapper" class="content bg-light-green padded text-center">
+    <div class="container">
+
+      <div id="iconHeaderRow" class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <input id="sexism-selector" class="radio-selector" type="radio" name="display-selector">
+          <div id="sexismQuestionnaire" class="questionnaire-content">
+            <h2>Sexism Questionnaire</h2>
+          </div>
+          <label id="sexism-label" class="label-selector" for="sexism-selector">
+            <div class="card">
+              <img src="#" class="">
+              <h2>Sexism</h2>
+            </div>
+          </label>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <input id="discri-rem-selector" class="radio-selector" type="radio" name="display-selector">
+          <div id="remDiscriQuestionnaire" class="questionnaire-content">
+            <h2>Remuneration Discrimination Questionnaire</h2>
+          </div>
+          <label id="discri-rem-label" class="label-selector" for="discri-rem-selector">
+            <div class="card">
+              <img src="#" class="">
+              <h2>Remuneration Discrimination</h2>
+            </div>
+          </label>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <input id="discri-prom-selector" class="radio-selector" type="radio" name="display-selector">
+          <div id="promDiscriQuestionnaire" class="questionnaire-content">
+            <h2>Promotion Discrimination Questionnaire</h2>
+          </div>
+          <label id="discri-prom-label" class="label-selector" for="discri-prom-selector">
+            <div class="card">
+              <img src="#" class="">
+              <h2>Promotion Discrimination</h2>
+            </div>
+          </label>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <input id="harassment-selector" class="radio-selector" type="radio" name="display-selector">
+          <div class="questionnaire-content">
+            <h2>Harassment Questionnaire</h2>
+          </div>
+          <label id="harassment-label" class="label-selector" for="harassment-selector">
+            <div class="card">
+              <img src="#" class="">
+              <h2>Harassment / Bullying</h2>
+            </div>
+          </label>
+        </div>
+
+      </div> <!-- row #1 -->
+
+<!--       <div id="contentRow" class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+          <div class="card">
+            <input id="sexism-selector" class="radio-selector" type="radio" name="display-selector">
+            <div id="sexismQuestionnaire" class="questionnaire-content">
+              <h2>Sexism Questionnaire</h2>
+            </div>
+            <input id="discri-rem-selector" class="radio-selector" type="radio" name="display-selector">
+            <div id="remDiscriQuestionnaire" class="questionnaire-content">
+              <h2>Remuneration Discrimination Questionnaire</h2>
+            </div>
+            <input id="discri-prom-selector" class="radio-selector" type="radio" name="display-selector">
+            <div id="promDiscriQuestionnaire" class="questionnaire-content">
+              <h2>Promotion Discrimination Questionnaire</h2>
+            </div>
+            <input id="harassment-selector" class="radio-selector" type="radio" name="display-selector">
+            <div class="questionnaire-content">
+              <h2>Harassment Questionnaire</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3"></div>
+      </div>
+ -->
+    </div> <!-- container -->
+  </div> <!-- wrapper -->
+</div> <!-- main -->
+
+
+    <!-- Footer -->
+    <div id="footer" class="bg-light-green">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <ul class="list-inline">
+              <li>
+<a href="/">                  <i class="fa fa-youtube"></i>
+</a>              </li>
+              <li>
+<a href="/">                  <i class="fa fa-instagram"></i>
+</a>              </li>
+              <li>
+<a href="/">                  <i class="fa fa-facebook"></i>
+</a>              </li>
+              <li>
+<a href="/">                  <i class="fa fa-twitter"></i>
+</a>              </li>
+            </ul>
+          </div>
+          <div class="col-xs-8 text-right">
+            <p>Sun.ny Dre.ams is a real-life proposal by The Choice!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
