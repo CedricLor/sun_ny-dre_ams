@@ -10,6 +10,8 @@
     <title>Sun.ny Voicings</title>
 
     <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
     <script src="javascripts/all.js" type="text/javascript"></script>
 
   </head>
@@ -73,21 +75,41 @@
 <style>
   /* Hide the radio buttons */
   .radio-selector {
-    display: none;
+    display: inline-block;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    opacity: 0;
+    position: fixed;
+    width: 1px;
+    z-index: -1;
   }
   /* Hide all the questionnaires by default */
-  .questionnaire-content {
-    display: none;
+  .questionnaire-container {
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    overflow: hidden;
+  }
+  label.label-selector {
+    display: inline-block;
+    cursor: pointer;
   }
   /* Show the questionnaire corresponding to the check radio button */
-  input.radio-selector:checked + div.questionnaire-content {
-    display:block;
+  input.radio-selector:checked + label.label-selector + div.questionnaire-container {
+    display: inline;
+    float: left;
+    color: red;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
   }
-  input.radio-selector:checked + div.questionnaire-content + label.label-selector {
-    color:red;
+  input.radio-selector:checked + label.label-selector {
+    color: black;
   }
-  .card {
-    cursor: pointer;
+  .inline-block {
+    display: inline-block;
   }
 </style>
 
@@ -98,59 +120,202 @@
 
       <div id="iconHeaderRow" class="row">
 
-        <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3 inline-block">
           <input id="sexism-selector" class="radio-selector" type="radio" name="display-selector">
-          <div id="sexismQuestionnaire" class="questionnaire-content">
-            <h2>Sexism Questionnaire</h2>
-          </div>
           <label id="sexism-label" class="label-selector" for="sexism-selector">
-            <div class="card">
-              <img src="#" class="">
-              <h2>Sexism</h2>
-            </div>
+            <img src="#" class="">
+            <h2>Sexism</h2>
           </label>
+          <div class="questionnaire-container">
+            <div id="sexismQuestionnaire" class="questionnaire-content">
+              <h2>Sexism Questionnaire</h2>
+            </div>
+          </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3 inline-block">
           <input id="discri-rem-selector" class="radio-selector" type="radio" name="display-selector">
-          <div id="remDiscriQuestionnaire" class="questionnaire-content">
-            <h2>Remuneration Discrimination Questionnaire</h2>
-          </div>
           <label id="discri-rem-label" class="label-selector" for="discri-rem-selector">
-            <div class="card">
-              <img src="#" class="">
-              <h2>Remuneration Discrimination</h2>
-            </div>
+            <img src="#" class="">
+            <h2>Remuneration Discrimination</h2>
           </label>
+          <div class="questionnaire-container">
+            <div id="remDiscriQuestionnaire" class="questionnaire-content">
+              <h2>Remuneration Discrimination Questionnaire</h2>
+            </div>
+          </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-12 col-sm-6 col-md-3 inline-block">
           <input id="discri-prom-selector" class="radio-selector" type="radio" name="display-selector">
-          <div id="promDiscriQuestionnaire" class="questionnaire-content">
-            <h2>Promotion Discrimination Questionnaire</h2>
-          </div>
           <label id="discri-prom-label" class="label-selector" for="discri-prom-selector">
-            <div class="card">
-              <img src="#" class="">
-              <h2>Promotion Discrimination</h2>
-            </div>
+            <img src="#" class="">
+            <h2>Promotion Discrimination</h2>
           </label>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <input id="harassment-selector" class="radio-selector" type="radio" name="display-selector">
-          <div class="questionnaire-content">
-            <h2>Harassment Questionnaire</h2>
+          <div class="questionnaire-container">
+            <div id="promDiscriQuestionnaire" class="questionnaire-content">
+              <h2>Promotion Discrimination Questionnaire</h2>
+            </div>
           </div>
-          <label id="harassment-label" class="label-selector" for="harassment-selector">
-            <div class="card">
-              <img src="#" class="">
-              <h2>Harassment / Bullying</h2>
-            </div>
-          </label>
         </div>
 
-      </div> <!-- row #1 -->
+        <div class="col-xs-12 col-sm-6 col-md-3 inline-block">
+          <input id="harassment-selector" class="radio-selector" type="radio" name="display-selector">
+          <label id="harassment-label" class="label-selector" for="harassment-selector">
+            <img src="#" class="">
+            <h2>Harassment - Bullying</h2>
+          </label>
+          <div class="questionnaire-container">
+            <div class="questionnaire-content">
+              <h2>Harassment Questionnaire</h2>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- row #1 -->
+
+      <style>
+        .tabs {
+          font-size: 0;
+          margin: 25px 0;
+        }
+
+        .tabs::after {
+          clear: both;
+          content: '';
+          display: table;
+        }
+
+        .tabs .tab {
+          display: inline;
+        }
+
+        .tabs .tab-label {
+          background: #eee;
+          border: 1px solid #ccc;
+          display: inline-block;
+          font-size: 16px;
+          font-size: 1rem;
+          left: 1px;
+          margin-left: -1px;
+          padding: 10px;
+          position: relative;
+          vertical-align: bottom;
+        }
+
+        .tabs .tab > [type="radio"] {
+          clip: rect(0 0 0 0);
+          height: 1px;
+          opacity: 0;
+          position: fixed;
+          width: 1px;
+          z-index: -1;
+        }
+
+        .tabs .tab-panel {
+          display: inline;
+          display: inline-block;
+          overflow: hidden;
+          position: relative;
+          height: 0;
+          width: 0;
+        }
+
+        .tabs .tab-content {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          display: block;
+          background: white;
+          padding: 0 20px;
+          border: 1px solid #ccc;
+          float: left;
+          font-size: 16px;
+          font-size: 1rem;
+          margin-top: -1px;
+          width: 100%;
+        }
+
+        .tabs .tab [type="radio"]:checked + .tab-label {
+          background: white;
+          border-bottom-width: 0;
+          padding-bottom: 11px;
+          z-index: 1;
+        }
+
+        .tabs .tab [type="radio"]:checked ~ .tab-panel {
+          display: inline;
+        }
+      </style>
+
+
+      <div class="row"> <!-- row #2 -->
+        <div class="col-xs-12">
+
+
+          <div class="tabs">
+
+            <div class="tab">
+              <input class="tab-radio" type="radio" id="tab-1" name="tab-group-1" checked>
+              <label class="tab-label" for="tab-1">Huh? Tabs again?</label>
+
+              <div class="tab-panel">
+                <div class="tab-content">
+                  <h3>Why would this be cool?</h3>
+                  <p>First look at the HTML structure: all elements related to one tab are within one block. Now think about that for a while. This must be done by Chris Coyier's <a href="http://css-tricks.com/functional-css-tabs-revisited/">Functional CSS Tabs Revisited</a> already, right?</p>
+                  <p>Maybe. But then you may notice another thing: Chris' example uses absolute positioning for the content. This means the tabs must be of fixed height. Yet these tabs here certainly aren't!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab">
+              <input class="tab-radio" type="radio" id="tab-2" name="tab-group-1">
+              <label class="tab-label" for="tab-2">Variable height content</label>
+
+              <div class="tab-panel">
+                <div class="tab-content">
+                  <h3>What is this devilry?</h3>
+                  <p>First of all we are working with inline content here and being smart about it. We eliminate white space using the dirty but sufficient zero font-size.</p>
+                  <p>There is one additional element in comparison to what Chris had: <code>.tab-panel</code> element, which works as a container for the <code>.tab-content</code> element. The panel is inline-block by default, which means it can take styles like overflow, position, and width and height. We set these to zero size, use <code>overflow: hidden;</code> and <code>position: relative;</code> so that <code>.tab-content</code> disappears. For the active tab we do only one style change and it happens to the <code>.tab-panel</code> element: we make it inline! Thus it no longer follows the other rules that bind inline-block. As a result it's child element will start following the flow of the next container element up in the tree.</p>
+                  <p>As for the <code>.tab-content</code> element it is floated and has a width of 100%. The neat thing about this combination is that it forces the element to go below the row where you can see the tab buttons.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab">
+              <input class="tab-radio" type="radio" id="tab-3" name="tab-group-1">
+              <label class="tab-label" for="tab-3">Browser support</label>
+              <div class="tab-panel">
+                <div class="tab-content">
+                  <h3>The support must be poor!</h3>
+                  <p>The CSS only part of this solution works in Internet Explorer 9+. All the other browsers are supported from so far back that it is enough to tell this works on Firefox, Chrome, Safari and Opera.</p>
+                  <p>The JavaScript is quite simple and it is for IE8 and below. It does no harm to other browsers, but you probably want to hide it behind IE conditional comments: <code>&lt;!--[if lte IE 8]&gt; &hellip; &lt;![endif]--&gt;</code></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab">
+              <input class="tab-radio" type="radio" id="tab-4" name="tab-group-1">
+              <label class="tab-label" for="tab-4">Internet Explorer 8<br /><small>And IE7, why not IE6 too</small></label>
+
+              <div class="tab-panel">
+                <div class="tab-content">
+                  <h3>Supporting the old</h3>
+                  <p>Internet Explorer 8 and below do not support the required <code>:checked</code> selector. This is why there is some JavaScript. It doesn't do a whole lot really: the active <code>.tab</code> element gets class <code>checked</code> and then we use that in CSS.</p>
+                  <p>Due to redrawing issues in IE8 we avoid using selectors like + and ~ with it. And this is also the reason we set class to the <code>.tab</code> element and not the radio button.</p>
+                  <p>The most interesting thing with styling in IE8 and below is to keep the input element on the page: if the element is hidden using <code>display: none;</code> then we never get the click events. To achieve a hidden input we position it absolutely and use IE proprietary Alpha filter to make it invisible. Then finally <code>z-index</code> throws it behind so it can't be clicked. To target the element properly an additional class of <code>.tab-radio</code> is added to the radio button. It is for IE8- only.</p>
+                  <p>All IE8- styles are within one media query so it's easy to remove it. It is also easy to remove IE7 and IE6 only styles by following the comments.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+      </div>
 
 <!--       <div id="contentRow" class="row">
         <div class="col-xs-3"></div>
@@ -177,7 +342,71 @@
         <div class="col-xs-3"></div>
       </div>
  -->
+
     </div> <!-- container -->
+
+    <script>
+      angular.module('ui.bootstrap.demo', ['ui.bootstrap']);
+      angular.module('ui.bootstrap.demo').controller('AccordionDemoCtrl', function ($scope) {
+        $scope.oneAtATime = true;
+
+        $scope.groups = [
+          {
+            title: 'Dynamic Group Header - 1',
+            content: 'Dynamic Group Body - 1'
+          },
+          {
+            title: 'Dynamic Group Header - 2',
+            content: 'Dynamic Group Body - 2'
+          }
+        ];
+
+        $scope.items = ['Item 1', 'Item 2', 'Item 3'];
+
+        $scope.addItem = function() {
+          var newItemNo = $scope.items.length + 1;
+          $scope.items.push('Item ' + newItemNo);
+        };
+
+        $scope.status = {
+          isFirstOpen: true,
+          isFirstDisabled: false
+        };
+      });
+    </script>
+    <div ng-app="ui.bootstrap.demo">
+      <div ng-controller="AccordionDemoCtrl">
+        <p>
+          <button class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button>
+          <button class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
+        </p>
+
+        <label class="checkbox">
+          <input type="checkbox" ng-model="oneAtATime">
+          Open only one at a time
+        </label>
+        <accordion close-others="oneAtATime">
+          <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+            This content is straight in the template.
+          </accordion-group>
+          <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+            {{group.content}}
+          </accordion-group>
+          <accordion-group heading="Dynamic Body Content">
+            <p>The body of the accordion group grows to fit the contents</p>
+              <button class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button>
+              <div ng-repeat="item in items">{{item}}</div>
+          </accordion-group>
+          <accordion-group is-open="status.open">
+              <accordion-heading>
+                  I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+              </accordion-heading>
+              This is just some content to illustrate fancy headings.
+          </accordion-group>
+        </accordion>
+      </div>
+    </div>
+
   </div> <!-- wrapper -->
 </div> <!-- main -->
 
