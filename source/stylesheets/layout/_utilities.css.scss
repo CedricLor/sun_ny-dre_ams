@@ -37,6 +37,10 @@
   padding-top: 2em;
   padding-bottom: 2em;
 }
+/* CHECK ON BOOTSTRAP */
+.shadowed-box {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
 .super-margin {
   margin-top: 220px;
 }
@@ -53,4 +57,9 @@
   a {
     color: $my-light-grey;
   }
+}
+/* box wrapper background (shadow) */
+.card-wrapper {
+  border-radius: 2px;
+  background: rgba(175, 175, 175, 0.1) none repeat scroll 0% 0%;
 }

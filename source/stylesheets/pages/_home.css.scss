@@ -3,7 +3,7 @@ body {
   font-size: $my-base-size;
   position: relative;
   color: $my-light-grey;
-  background-color: rgba(255, 255, 255, 0); /* TO BE DISCUSSED WITH TEDDY */
+  background-color: $body-bg; /* TO BE DISCUSSED WITH TEDDY */
 }
 h1, h2, h3 {
   font-family: $header-font;
@@ -16,12 +16,14 @@ h3 {
 }
 
 /* INDEX PAGE CARD FORMATING */
-/* Card hover */
-#main {
-  background-color: rgba(255, 255, 255, 0);
-}
+/* Card formatting */
 #main-links .card {
-  padding: 25px 5px;
+  margin-top: 15px;
+  padding: 15px 5px 0px;
+  background-color: $my-light-purple;
+  border-radius: $border-radius-large;
+  height: 320px;
+  height: 22em;
   .nav-icon {
     opacity: 0.2;
     -webkit-transition: opacity 0.3s ease;
@@ -36,10 +38,10 @@ h3 {
     color: $my-strong-grey;
   }
 }
-/* HEADER */
+/* HEADERS */
 .header {
   width: 100%;
-  height: 700px;
+  height: 600px;
   top: 0;
   left:0;
   background-repeat: no-repeat;
@@ -75,12 +77,20 @@ h3 {
   h3 {
     margin-top: 0px;
   }
-  .separation-line {
-    padding-top: 10px;
-    border-bottom: 1px dotted black;
+  .bg-thumbnail-purple {
+    background-color: $my-light-purple;
+    border-radius: $border-radius-large;
+  }
+  .card {
+    margin-top: 10px;
+    height: 140px;
+    padding: 0px 10px;
   }
   button {
     margin-bottom: 10px;
     width: 150px;
   }
+}
+button, input {
+  border-radius: $border-radius-large;
 }

@@ -5,8 +5,8 @@
 
 // General style
 $font-family-sans-serif:  $base-font;
-//$body-bg:                 rgba(246, 248, 224, 0.7);
-//$body-bg:                 lighten(#000, 93.5%);
+$body-bg:                 $my-light-green;
+//$body-bg:                 lighten(#000, 93.5%); // TO BE DISCUSSED WITH TEDDY
 $font-size-base:          $base-size;
 $line-height-base:        $base-height;
 $headings-font-family:    $header-font;
@@ -21,4 +21,4 @@ $brand-warning:   $orange;
 // Buttons / inputs radius
 $border-radius-base:  2px;
 $border-radius-large: 3px;
-$border-radius-small: 4px;
+$border-radius-small: 1px;

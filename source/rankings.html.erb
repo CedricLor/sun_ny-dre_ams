@@ -29,33 +29,39 @@ title: Sun.ny Ran.kings
 </div>
 
 <!-- Main content -->
-<div id="main">
+<div id="main bg-light-green">
   <div id="companies-list" class="content bg-light-green padded text-center">
     <div class="container">
       <% data.companies.cosmetics.each do |firm| %>
-      <div class="row separation-line">
-        <div class="col-xs-12 col-sm-3">
-          <div class="card">
-            <%= image_tag firm.image, :class => "company-icon" %>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-7">
-          <div class="card text-left">
-            <h3><%= "#{firm.ranking}\/5 - " %><%= link_to firm.name, firm.url %></h3>
-            <p><%= "#{firm.name} #{firm.description}" %></p>
-            <p>Total headcount: <%= firm.number_of_employees %></p>
-            <p>Total number of reviews: <%= firm.voters %></p>
-            <p><%= link_to "Read more...", firm.internal_url %></p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-2">
-            <div class="card text-left">
-              <button type="button" class="btn btn-default btn-xs">Rate this firm!</button>
-              <button type="button" class="btn btn-default btn-xs">Share on <i class="fa fa-facebook"></i></button>
-              <button type="button" class="btn btn-default btn-xs">Tweet it! <i class="fa fa-twitter"></i></button>
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <div class="thumbnail bg-thumbnail-purple shadowed-box">
+              <div class="card">
+                <%= image_tag firm.image, :class => "company-icon" %>
+              </div>
             </div>
+          </div>
+          <div class="col-xs-12 col-sm-7">
+            <div class="thumbnail bg-thumbnail-purple shadowed-box text-left">
+              <div class="card">
+                <h3><%= "#{firm.ranking}\/5 - " %><%= link_to firm.name, firm.url %></h3>
+                <p><%= "#{firm.name} #{firm.description}" %></p>
+                <p>Total headcount: <%= firm.number_of_employees %></p>
+                <p>Total number of reviews: <%= firm.voters %></p>
+                <p><%= link_to "Read more...", firm.internal_url %></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+              <div class="thumbnail bg-thumbnail-purple shadowed-box text-center">
+                <div class="card">
+                  <button type="button" class="btn btn-default btn-xs">Rate this firm!</button>
+                  <button type="button" class="btn btn-default btn-xs">Share on <i class="fa fa-facebook"></i></button>
+                  <button type="button" class="btn btn-default btn-xs">Tweet it! <i class="fa fa-twitter"></i></button>
+                </div>
+              </div>
+          </div>
         </div>
-      </div>
       <% end %>
     </div>
   </div> <!-- companies-list -->

@@ -7,9 +7,10 @@ title: Sun.ny Wel.come
     <div class="row super-margin">
       <div class="col-xs-12 col-md-6">
         <h1>Sun.ny Dre.ams</h1>
-        <p>Sunshine your head, dream up your life</p>
-        <p>Go out, shout out!</p>
-        <p>Laugh and love...</p>
+        <p>Sunshine your professional life</p>
+        <p>Shout out your concerns</p>
+        <p>Give a ranking to your employer</p>
+        <p>Identify the most respectful work environment</p>
         <button class="btn btn-default btn-lg btn-formating" type="submit">Get a NEW life! Now!</button>
       </div>
     </div>
@@ -17,14 +18,14 @@ title: Sun.ny Wel.come
 </div>
 
 <!-- Main content -->
-<div id="main">
+<div id="main bg-light-green">
   <div id="main-links" class="content bg-light-green padded text-center">
     <div class="container">
       <!-- Features -->
       <div class="row">
         <% data.index_items.each do |index_item| %>
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="card">
+            <div class="card shadowed-box">
               <% link_to index_item.url do %>
                 <%= image_tag index_item.image, :class => "nav-icon" %>
                 <h2><%= index_item.name %></h2>
