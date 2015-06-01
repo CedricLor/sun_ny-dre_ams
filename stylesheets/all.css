@@ -1164,7 +1164,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: #333333;
-  background-color: #fff; }
+  background-color: rgba(243, 251, 241, 0.78); }
 
 /* line 36, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_scaffolding.scss */
 input,
@@ -1211,7 +1211,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.4;
-  background-color: #fff;
+  background-color: rgba(243, 251, 241, 0.78);
   border: 1px solid #ddd;
   border-radius: 2px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1645,7 +1645,7 @@ kbd {
   font-size: 90%;
   color: #fff;
   background-color: #333;
-  border-radius: 4px;
+  border-radius: 1px;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
   /* line 32, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_code.scss */
   kbd kbd {
@@ -2620,7 +2620,7 @@ th {
     border-top: 2px solid #ddd; }
   /* line 62, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_tables.scss */
   .table .table {
-    background-color: #fff; }
+    background-color: rgba(243, 251, 241, 0.78); }
 
 /* line 75, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_tables.scss */
 .table-condensed > thead > tr > th,
@@ -3058,7 +3058,7 @@ input[type="checkbox"] {
   padding: 5px 10px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 4px; }
+  border-radius: 1px; }
 
 /* line 79, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_forms.scss */
 select.input-sm, .input-group-sm > select.form-control,
@@ -3537,14 +3537,14 @@ select[multiple].input-lg,
   padding: 5px 10px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 4px; }
+  border-radius: 1px; }
 
 /* line 135, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-xs, .btn-group-xs > .btn {
   padding: 1px 5px;
   font-size: 14px;
   line-height: 1.5;
-  border-radius: 4px; }
+  border-radius: 1px; }
 
 /* line 143, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-block {
@@ -4002,7 +4002,7 @@ tbody.collapse.in {
   .input-group-sm > .input-group-btn > .input-group-addon.btn {
     padding: 5px 10px;
     font-size: 14px;
-    border-radius: 4px; }
+    border-radius: 1px; }
   /* line 90, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_input-groups.scss */
   .input-group-addon.input-lg,
   .input-group-lg > .input-group-addon,
@@ -4135,7 +4135,7 @@ tbody.collapse.in {
     /* line 96, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_navs.scss */
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
-      background-color: #fff;
+      background-color: rgba(243, 251, 241, 0.78);
       border: 1px solid #ddd;
       border-bottom-color: transparent;
       cursor: default; }
@@ -4210,7 +4210,7 @@ tbody.collapse.in {
     .nav-tabs.nav-justified > .active > a:hover,
     .nav-tabs-justified > .active > a:focus,
     .nav-tabs.nav-justified > .active > a:focus {
-      border-bottom-color: #fff; } }
+      border-bottom-color: rgba(243, 251, 241, 0.78); } }
 
 /* line 224, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_navs.scss */
 .tab-content > .tab-pane {
@@ -4837,13 +4837,13 @@ tbody.collapse.in {
 /* line 11, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_pagination.scss */
 .pagination-sm > li:first-child > a,
 .pagination-sm > li:first-child > span {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px; }
+  border-bottom-left-radius: 1px;
+  border-top-left-radius: 1px; }
 /* line 17, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_pagination.scss */
 .pagination-sm > li:last-child > a,
 .pagination-sm > li:last-child > span {
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px; }
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px; }
 
 /* line 6, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_pager.scss */
 .pager {
@@ -5047,7 +5047,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 22px;
   line-height: 1.4;
-  background-color: #fff;
+  background-color: rgba(243, 251, 241, 0.78);
   border: 1px solid #ddd;
   border-radius: 2px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -5849,7 +5849,7 @@ a.list-group-item-danger {
 /* line 26, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_wells.scss */
 .well-sm {
   padding: 9px;
-  border-radius: 4px; }
+  border-radius: 1px; }
 
 /* line 6, /Users/cedriclor/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_close.scss */
 .close {
@@ -8947,7 +8947,7 @@ button.close {
     opacity: 0; } }
 /* line 42, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_navbar.css.scss */
 .navbar-wagon {
-  background: rgba(246, 248, 224, 0.7);
+  background: rgba(243, 251, 241, 0.78);
   font-family: "Montserrat", "sans-serif";
   border: none;
   font-weight: 400;
@@ -9100,26 +9100,37 @@ button.close {
   padding-top: 2em;
   padding-bottom: 2em; }
 
-/* line 41, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
+/* CHECK ON BOOTSTRAP */
+/* line 42, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
+.shadowed-box {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
+
+/* line 45, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
 .super-margin {
   margin-top: 220px; }
 
-/* line 44, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
+/* line 48, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
 .small-top-margin {
   margin-top: 40px; }
 
-/* line 47, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
+/* line 51, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
 .search-form-margin {
   margin-top: 100px; }
 
 /* My backgrounds */
-/* line 51, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
+/* line 55, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
 .bg-light-green {
-  background-color: rgba(246, 248, 224, 0.7);
+  background-color: rgba(243, 251, 241, 0.78);
   color: #9E9A9A; }
-  /* line 54, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
+  /* line 58, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
   .bg-light-green a {
     color: #9E9A9A; }
+
+/* box wrapper background (shadow) */
+/* line 63, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/layout/_utilities.css.scss */
+.card-wrapper {
+  border-radius: 2px;
+  background: rgba(175, 175, 175, 0.1) none repeat scroll 0% 0%; }
 
 /* line 1, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/components/_button.css.scss */
 .header .btn-formating {
@@ -9136,7 +9147,7 @@ body {
   font-size: 14px;
   position: relative;
   color: #9E9A9A;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(243, 251, 241, 0.78);
   /* TO BE DISCUSSED WITH TEDDY */ }
 
 /* line 8, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
@@ -9153,75 +9164,85 @@ h3 {
   font-size: 16px; }
 
 /* INDEX PAGE CARD FORMATING */
-/* Card hover */
+/* Card formatting */
 /* line 20, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
-#main {
-  background-color: rgba(255, 255, 255, 0); }
-
-/* line 23, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
 #main-links .card {
-  padding: 25px 5px; }
-  /* line 25, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+  margin-top: 15px;
+  padding: 15px 5px 0px;
+  background-color: rgba(244, 240, 249, 0.7);
+  border-radius: 3px;
+  height: 320px;
+  height: 22em; }
+  /* line 27, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
   #main-links .card .nav-icon {
     opacity: 0.2;
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
     -ms-transition: opacity 0.3s ease;
     transition: opacity 0.5s ease; }
-  /* line 32, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+  /* line 34, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
   #main-links .card:hover .nav-icon {
     opacity: 0.7; }
-  /* line 35, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+  /* line 37, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
   #main-links .card:hover * {
     color: #4A4747; }
 
-/* HEADER */
-/* line 40, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+/* HEADERS */
+/* line 42, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
 .header {
   width: 100%;
-  height: 700px;
+  height: 600px;
   top: 0;
   left: 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
-  /* line 49, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+  /* line 51, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
   .header * {
     color: white; }
-  /* line 52, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+  /* line 54, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
   .header p {
     font-family: Open Sans;
     font-weight: 100;
     font-size: 20px; }
-  /* line 57, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+  /* line 59, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
   .header form * {
     color: black; }
-  /* line 60, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+  /* line 62, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
   .header.index-bg-image {
     background-image: url(../images/young_woman_back.jpg); }
-  /* line 63, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+  /* line 65, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
   .header.rankings-bg-image {
     background-image: url(../images/mount-everest.jpg); }
-  /* line 66, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+  /* line 68, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
   .header.voicings-bg-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fist.jpg); }
 
 /* RANKING PAGE */
-/* line 72, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+/* line 74, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
 #companies-list .company-icon {
   width: 70px; }
-/* line 75, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+/* line 77, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
 #companies-list h3 {
   margin-top: 0px; }
-/* line 78, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
-#companies-list .separation-line {
-  padding-top: 10px;
-  border-bottom: 1px dotted black; }
-/* line 82, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+/* line 80, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+#companies-list .bg-thumbnail-purple {
+  background-color: rgba(244, 240, 249, 0.7);
+  border-radius: 3px; }
+/* line 84, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+#companies-list .card {
+  margin-top: 10px;
+  height: 140px;
+  padding: 0px 10px; }
+/* line 89, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
 #companies-list button {
   margin-bottom: 10px;
   width: 150px; }
+
+/* line 94, /Users/cedriclor/code/CedricLor/sun_ny-dre_ams/source/stylesheets/pages/_home.css.scss */
+button, input {
+  border-radius: 3px; }
 
 /*
 ==============================================
